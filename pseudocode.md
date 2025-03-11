@@ -5,10 +5,10 @@ START
   PRINT "Enter the total bill amount"
   INPUT bill_amt
   IF (validate(bill_amt)==true)
-      PRINT "How the service quality (poor, fair, good or excellent)"
+      PRINT "Quality of service received (poor, fair, good, or excellent)"
       INPUT s_q
       IF (validate_service(s_q)==true)
-        PRINT "Number of people"
+        PRINT "Number of people splitting the bill"
         INPUT n
         IF (validate(n)==true)
           PRINT "Bill amount:",bill_amt
